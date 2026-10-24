@@ -281,8 +281,8 @@
   // ---- Kategorien und Wörter (hier kannst du jederzeit Wörter ergänzen) ----
   const CATEGORIES = [
     { id: "trends", name: { de: "Trends", en: "Trends" }, words: {
-      de: ["Labubu", "Dubai-Schokolade", "Matcha", "Padel", "Pilates", "Heißluftfritteuse", "Thrifting", "Skincare", "Stanley-Becher", "Bubble Tea", "Sneaker", "Podcast", "Cold Plunge", "Duolingo", "Oversize-Hoodie", "Pickleball", "Reels", "Smartwatch", "Wordle", "Tanghulu"],
-      en: ["Labubu", "Dubai chocolate", "Matcha", "Padel", "Pilates", "Air fryer", "Thrifting", "Skincare", "Stanley cup", "Bubble tea", "Sneakers", "Podcast", "Cold plunge", "Duolingo", "Oversized hoodie", "Pickleball", "Reels", "Smartwatch", "Wordle", "Tanghulu"] } },
+      de: ["Labubu", "Dubai-Schokolade", "Matcha", "Pilates", "Heißluftfritteuse", "Thrifting", "Skincare", "Stanley-Becher", "Bubble Tea", "Sneaker", "Podcast", "Duolingo", "Oversize-Hoodie", "Reels", "Smartwatch", "Wordle"],
+      en: ["Labubu", "Dubai chocolate", "Matcha", "Pilates", "Air fryer", "Thrifting", "Skincare", "Stanley cup", "Bubble tea", "Sneakers", "Podcast", "Duolingo", "Oversized hoodie", "Reels", "Smartwatch", "Wordle"] } },
     { id: "spicy", name: { de: "Spicy", en: "Spicy" }, words: {
       de: ["Kuss", "Flirten", "Knutschfleck", "Massage", "Sauna", "Bikini", "Candle-Light-Dinner", "Tinder", "Lippenstift", "Seitensprung", "Kuscheln", "Dessous", "Ex", "One-Night-Stand", "Valentinstag", "Hotelzimmer", "Schmetterlinge im Bauch", "Blind Date", "Schlafzimmer", "Eifersucht"],
       en: ["Kiss", "Flirting", "Hickey", "Massage", "Sauna", "Bikini", "Candlelight dinner", "Tinder", "Lipstick", "Affair", "Cuddling", "Lingerie", "Ex", "One-night stand", "Valentine's Day", "Hotel room", "Butterflies in your stomach", "Blind date", "Bedroom", "Jealousy"] } },
@@ -290,14 +290,14 @@
       de: ["Nike", "Adidas", "Apple", "IKEA", "Coca-Cola", "McDonald's", "Lidl", "Aldi", "Netflix", "Spotify", "Zara", "Samsung", "BMW", "Haribo", "Red Bull", "Nutella", "Rewe", "Puma", "Lego", "PlayStation"],
       en: ["Nike", "Adidas", "Apple", "IKEA", "Coca-Cola", "McDonald's", "Lidl", "Aldi", "Netflix", "Spotify", "Zara", "Samsung", "BMW", "Haribo", "Red Bull", "Nutella", "Starbucks", "Puma", "Lego", "PlayStation"] } },
     { id: "movies", name: { de: "Filme und Serien", en: "Movies & Series" }, words: {
-      de: ["Harry Potter", "Titanic", "Der Herr der Ringe", "Star Wars", "Stranger Things", "Squid Game", "Breaking Bad", "Game of Thrones", "Fack ju Göhte", "Dark", "Shrek", "Findet Nemo", "Der Pate", "Friends", "Barbie", "Matrix", "Jurassic Park", "Wednesday", "Haus des Geldes", "Avatar"],
-      en: ["Harry Potter", "Titanic", "The Lord of the Rings", "Star Wars", "Stranger Things", "Squid Game", "Breaking Bad", "Game of Thrones", "The Hangover", "Dark", "Shrek", "Finding Nemo", "The Godfather", "Friends", "Barbie", "The Matrix", "Jurassic Park", "Wednesday", "Money Heist", "Avatar"] } },
+      de: ["Harry Potter", "Titanic", "Der Herr der Ringe", "Star Wars", "Stranger Things", "Squid Game", "Breaking Bad", "Game of Thrones", "Dark", "Shrek", "Findet Nemo", "Der Pate", "Friends", "Barbie", "Matrix", "Jurassic Park", "Wednesday", "Haus des Geldes", "Avatar"],
+      en: ["Harry Potter", "Titanic", "The Lord of the Rings", "Star Wars", "Stranger Things", "Squid Game", "Breaking Bad", "Game of Thrones", "Dark", "Shrek", "Finding Nemo", "The Godfather", "Friends", "Barbie", "The Matrix", "Jurassic Park", "Wednesday", "Money Heist", "Avatar"] } },
     { id: "slang", name: { de: "Jugendsprache", en: "Slang" }, words: {
-      de: ["Digga", "Cringe", "Wallah", "Lost", "Safe", "Ehrenmann", "Slay", "Aura", "Läuft bei dir", "Goofy", "Sus", "Rizz", "Mid", "Talahon", "Sigma", "Yolo", "Bro", "Hater", "Vibe", "Flexen"],
-      en: ["Cringe", "Rizz", "Slay", "No cap", "Bet", "Sus", "Mid", "Aura", "Goofy", "Vibe", "Flex", "Lowkey", "Bussin", "Salty", "Simp", "Drip", "Sigma", "Yolo", "Hater", "Fire"] } },
+      de: ["Digga", "Cringe", "Lost", "Safe", "Ehrenmann", "Slay", "Aura", "Läuft bei dir", "Goofy", "Sus", "Rizz", "Mid", "Sigma", "Yolo", "Bro", "Hater", "Vibe", "Flexen"],
+      en: ["Cringe", "Rizz", "Slay", "No cap", "Bet", "Sus", "Mid", "Aura", "Goofy", "Vibe", "Flex", "Lowkey", "Salty", "Drip", "Sigma", "Yolo", "Hater", "Fire"] } },
     { id: "genz", name: { de: "Gen Z", en: "Gen Z" }, words: {
-      de: ["TikTok", "Snapchat", "BeReal", "Streaks", "Skibidi", "Girl Dinner", "Brainrot", "Doomscrollen", "Ghosting", "Situationship", "Main Character", "Red Flag", "Green Flag", "Quiet Quitting", "AirPods", "Crocs", "Shein", "FOMO", "Digital Detox", "Close Friends"],
-      en: ["TikTok", "Snapchat", "BeReal", "Streaks", "Skibidi", "Girl dinner", "Brain rot", "Doomscrolling", "Ghosting", "Situationship", "Main character", "Red flag", "Green flag", "Quiet quitting", "AirPods", "Crocs", "Shein", "FOMO", "Digital detox", "Close friends"] } },
+      de: ["TikTok", "Snapchat", "Streaks", "Skibidi", "Girl Dinner", "Brainrot", "Doomscrollen", "Ghosting", "Situationship", "Main Character", "Red Flag", "Green Flag", "AirPods", "FOMO", "Digital Detox", "Close Friends"],
+      en: ["TikTok", "Snapchat", "Streaks", "Skibidi", "Girl dinner", "Brain rot", "Doomscrolling", "Ghosting", "Situationship", "Main character", "Red flag", "Green flag", "AirPods", "FOMO", "Digital detox", "Close friends"] } },
     { id: "anime", name: { de: "Anime", en: "Anime" }, words: {
       de: ["Naruto", "One Piece", "Dragon Ball", "Attack on Titan", "Death Note", "Pokémon", "Demon Slayer", "My Hero Academia", "Sailor Moon", "Das wandelnde Schloss", "Totoro", "Jujutsu Kaisen", "Fullmetal Alchemist", "Bleach", "Tokyo Ghoul", "One Punch Man", "Detektiv Conan", "Hunter x Hunter", "Goku", "Ruffy"],
       en: ["Naruto", "One Piece", "Dragon Ball", "Attack on Titan", "Death Note", "Pokémon", "Demon Slayer", "My Hero Academia", "Sailor Moon", "Howl's Moving Castle", "Totoro", "Jujutsu Kaisen", "Fullmetal Alchemist", "Bleach", "Tokyo Ghoul", "One Punch Man", "Detective Conan", "Hunter x Hunter", "Goku", "Luffy"] } },
@@ -305,31 +305,22 @@
       de: ["Löwe", "Pinguin", "Delfin", "Wald", "Vulkan", "Wasserfall", "Regenbogen", "Gewitter", "Korallenriff", "Wüste", "Eule", "Kolibri", "Faultier", "Gebirge", "Nordlicht", "Dschungel", "Oktopus", "Biene", "Gletscher", "Sonnenblume"],
       en: ["Lion", "Penguin", "Dolphin", "Forest", "Volcano", "Waterfall", "Rainbow", "Thunderstorm", "Coral reef", "Desert", "Owl", "Hummingbird", "Sloth", "Mountains", "Northern lights", "Jungle", "Octopus", "Bee", "Glacier", "Sunflower"] } },
     { id: "stars", name: { de: "Stars und Celebrities", en: "Stars & Celebrities" }, words: {
-      de: ["Taylor Swift", "Cristiano Ronaldo", "Lionel Messi", "Elon Musk", "Rihanna", "Beyoncé", "Kim Kardashian", "Billie Eilish", "Drake", "Tom Cruise", "Leonardo DiCaprio", "Helene Fischer", "Till Lindemann", "Heidi Klum", "Joko Winterscheidt", "Cardi B", "MrBeast", "Lena Meyer-Landrut", "Dwayne Johnson", "Zendaya"],
+      de: ["Taylor Swift", "Cristiano Ronaldo", "Lionel Messi", "Elon Musk", "Rihanna", "Beyoncé", "Kim Kardashian", "Billie Eilish", "Drake", "Tom Cruise", "Leonardo DiCaprio", "Helene Fischer", "Heidi Klum", "Joko Winterscheidt", "Cardi B", "MrBeast", "Lena Meyer-Landrut", "Dwayne Johnson", "Zendaya"],
       en: ["Taylor Swift", "Cristiano Ronaldo", "Lionel Messi", "Elon Musk", "Rihanna", "Beyoncé", "Kim Kardashian", "Billie Eilish", "Drake", "Tom Cruise", "Leonardo DiCaprio", "Ed Sheeran", "Ariana Grande", "Kylie Jenner", "Justin Bieber", "Cardi B", "MrBeast", "Selena Gomez", "Dwayne Johnson", "Zendaya"] } },
     // Die Seifenblase ist noch leer – trag hier später deine eigenen Wörter ein, z. B. de: ["Wort1", "Wort2"]
-    { id: "bubble", name: { de: "Seifenblase", en: "Soap Bubble" }, words: { de: [], en: [] } },
+    { id: "bubble", name: { de: "Seifenblase", en: "Soap Bubble" }, words: { de: ["T Schank", "Waixr", "Synop"], en: ["T Schank", "Waixr", "Synop"] } },
     { id: "music", name: { de: "Musik", en: "Music" }, words: {
       de: ["Gitarre", "Klavier", "Schlagzeug", "Konzert", "Mikrofon", "Kopfhörer", "DJ", "Festival", "Karaoke", "Chor", "Refrain", "Vinyl", "Rap", "Techno", "Geige", "Playlist", "Bass", "Orchester", "Tonleiter", "Album"],
       en: ["Guitar", "Piano", "Drums", "Concert", "Microphone", "Headphones", "DJ", "Festival", "Karaoke", "Choir", "Chorus", "Vinyl", "Rap", "Techno", "Violin", "Playlist", "Bass", "Orchestra", "Scale", "Album"] } },
     { id: "games", name: { de: "Videospiele", en: "Video Games" }, words: {
       de: ["Minecraft", "Fortnite", "FIFA", "Super Mario", "Zelda", "GTA", "Among Us", "Roblox", "Tetris", "Pac-Man", "League of Legends", "Call of Duty", "Pokémon", "Counter-Strike", "Die Sims", "Valorant", "Fallout", "Animal Crossing", "Skyrim", "Rocket League"],
       en: ["Minecraft", "Fortnite", "FIFA", "Super Mario", "Zelda", "GTA", "Among Us", "Roblox", "Tetris", "Pac-Man", "League of Legends", "Call of Duty", "Pokémon", "Counter-Strike", "The Sims", "Valorant", "Fallout", "Animal Crossing", "Skyrim", "Rocket League"] } },
-    { id: "memes", name: { de: "Memes", en: "Memes" }, words: {
-      de: ["Doge", "Grumpy Cat", "Rickroll", "Pepe", "Trollface", "Distracted Boyfriend", "Nyan Cat", "Harold", "Karen", "Gigachad", "Stonks", "Bonk", "Baby Yoda", "Ohio", "Sigma Male", "Skibidi Toilet", "Cheems", "Huh-Katze", "Moo Deng", "Chad"],
-      en: ["Doge", "Grumpy Cat", "Rickroll", "Pepe", "Trollface", "Distracted Boyfriend", "Nyan Cat", "Harold", "Karen", "Gigachad", "Stonks", "Bonk", "Baby Yoda", "Ohio", "Sigma Male", "Skibidi Toilet", "Cheems", "Huh Cat", "Moo Deng", "Chad"] } },
-    { id: "anatomy", name: { de: "Anatomie", en: "Anatomy" }, words: {
-      de: ["Herz", "Lunge", "Leber", "Niere", "Gehirn", "Magen", "Wirbelsäule", "Schädel", "Rippen", "Zwerchfell", "Darm", "Blase", "Oberschenkel", "Ellenbogen", "Kniescheibe", "Bauchnabel", "Zunge", "Daumen", "Fußsohle", "Gaumen"],
-      en: ["Heart", "Lung", "Liver", "Kidney", "Brain", "Stomach", "Spine", "Skull", "Ribs", "Diaphragm", "Intestine", "Bladder", "Thigh", "Elbow", "Kneecap", "Belly button", "Tongue", "Thumb", "Sole", "Palate"] } },
     { id: "history", name: { de: "Historische Figuren", en: "Historical Figures" }, words: {
       de: ["Napoleon", "Kleopatra", "Albert Einstein", "Julius Caesar", "Leonardo da Vinci", "Martin Luther", "Karl der Große", "Marie Curie", "Gandhi", "Abraham Lincoln", "Dschingis Khan", "Mozart", "Beethoven", "Goethe", "Königin Victoria", "Sisi", "Friedrich der Große", "Christoph Kolumbus", "Alexander der Große", "Nelson Mandela"],
       en: ["Napoleon", "Cleopatra", "Albert Einstein", "Julius Caesar", "Leonardo da Vinci", "Martin Luther", "Charlemagne", "Marie Curie", "Gandhi", "Abraham Lincoln", "Genghis Khan", "Mozart", "Beethoven", "Goethe", "Queen Victoria", "Sisi", "Frederick the Great", "Christopher Columbus", "Alexander the Great", "Nelson Mandela"] } },
     { id: "drinks", name: { de: "Getränke", en: "Drinks" }, words: {
       de: ["Cola", "Apfelschorle", "Club-Mate", "Kaffee", "Tee", "Bier", "Weißwein", "Sekt", "Mojito", "Limonade", "Milchshake", "Smoothie", "Energydrink", "Wasser", "Aperol Spritz", "Eistee", "Glühwein", "Orangensaft", "Kakao", "Radler"],
-      en: ["Cola", "Apple spritzer", "Iced coffee", "Coffee", "Tea", "Beer", "White wine", "Champagne", "Mojito", "Lemonade", "Milkshake", "Smoothie", "Energy drink", "Water", "Aperol Spritz", "Iced tea", "Mulled wine", "Orange juice", "Hot chocolate", "Margarita"] } },
-    { id: "appliances", name: { de: "Haushaltsgeräte", en: "Household Appliances" }, words: {
-      de: ["Staubsauger", "Waschmaschine", "Toaster", "Mikrowelle", "Kühlschrank", "Geschirrspüler", "Wasserkocher", "Bügeleisen", "Föhn", "Mixer", "Kaffeemaschine", "Trockner", "Backofen", "Herd", "Dunstabzugshaube", "Saugroboter", "Heißluftfritteuse", "Rasierer", "Ventilator", "Gefrierschrank"],
-      en: ["Vacuum cleaner", "Washing machine", "Toaster", "Microwave", "Fridge", "Dishwasher", "Kettle", "Iron", "Hair dryer", "Blender", "Coffee machine", "Dryer", "Oven", "Stove", "Extractor hood", "Robot vacuum", "Air fryer", "Shaver", "Fan", "Freezer"] } }
+      en: ["Cola", "Apple spritzer", "Iced coffee", "Coffee", "Tea", "Beer", "White wine", "Champagne", "Mojito", "Lemonade", "Milkshake", "Smoothie", "Energy drink", "Water", "Aperol Spritz", "Iced tea", "Mulled wine", "Orange juice", "Hot chocolate", "Margarita"] } },  
   ];
   const RANDOM_ID = "random";
 
